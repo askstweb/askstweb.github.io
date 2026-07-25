@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile /askstweb.github.io/.htpasswd
-Require valid-user
