@@ -1,604 +1,399 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
-<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' blob:; style-src 'unsafe-inline'; img-src 'self' data: blob:; font-src 'none'; connect-src 'self' https:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'self' data: blob:;">
-<title>Private Page</title>
-<script>
-(function () {
-  try {
-    if (true) {
-      const key = new URLSearchParams(window.location.search).get('key');
-      if (key) document.documentElement.classList.add('auto-unlocking');
-    }
-  } catch (_) {}
-})();
-</script>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 20px;
-    color: #172033;
-    background:
-      radial-gradient(circle at 20% 0%, rgba(37,99,235,.20), transparent 26rem),
-      linear-gradient(135deg, #f8fbff, #eef5ff);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-  }
-  .box {
-    width: min(430px, 100%);
-    border: 1px solid #d9e4f2;
-    background: #fff;
-    border-radius: 28px;
-    box-shadow: 0 24px 70px rgba(15,62,168,.16);
-    overflow: hidden;
-  }
-  .top {
-    padding: 28px 24px;
-    color: #fff;
-    background: linear-gradient(135deg, #102a60, #2563eb);
-    text-align: center;
-  }
-  .top h1 {
-    margin: 0;
-    font-size: 1.2rem;
-    line-height: 1.45;
-  }
-  .main { padding: 24px; }
-  input {
-    width: 100%;
-    padding: 13px 14px;
-    border: 1px solid #c7d7eb;
-    border-radius: 16px;
-    outline: none;
-    font: inherit;
-    margin-bottom: 12px;
-    background: #fbfdff;
-  }
-  input:focus {
-    border-color: #2563eb;
-    box-shadow: 0 0 0 4px rgba(37,99,235,.13);
-  }
-  button {
-    width: 100%;
-    border: 0;
-    border-radius: 18px;
-    padding: 14px 18px;
-    background: linear-gradient(135deg, #2563eb, #0f3ea8);
-    color: white;
-    font: inherit;
-    font-weight: 800;
-    cursor: pointer;
-  }
-  button:disabled {
-    opacity: .62;
-    cursor: default;
-  }
-  button.secondary {
-    margin-top: 10px;
-    color: #172033;
-    background: #eef5ff;
-    border: 1px solid #c7d7eb;
-  }
-  input[type=file] { display: none; }
-  .message {
-    min-height: 1.4em;
-    margin-top: 14px;
-    color: #667085;
-    text-align: center;
-    font-size: .9rem;
-    line-height: 1.6;
-  }
-  .error { color: #b42318; }
-  html.auto-unlocking body { visibility: hidden; }
-</style>
+<meta name="robots" content="noindex">
+<title>PORTFORIO</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/lct6uap.css">
 </head>
 <body>
-<div class="box">
-  <div class="top"><h1>🔒 Private Page</h1></div>
-  <div class="main">
-    <input id="unlockKey" type="password" placeholder="パスワードを入力" autocomplete="current-password" autofocus>
-    <button id="unlockButton" type="button">開く</button>
-    <button id="openUnlockFileButton" class="secondary" type="button">解除用ファイルを開く</button>
-    <input id="unlockFileInput" type="file" accept=".txt,text/plain">
-    <div id="message" class="message"></div>
+<div id="base">
+  <div class="wrapper_head">
+    <header>
+      <div id="header_main">
+        <div class="header_l">
+          <h1>PORTFORIO</h1>
+        </div>
+        <!--eof header_l -->
+        
+        <div class="header_r">
+          <nav>
+            <ul id="menu" class="menu">
+              <li><a href="#profile">PROFILE</a></li>
+              <li><a href="#works">WORKS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- eof #header_main--> 
+      
+    </header>
+    <!-- eof header--> 
+    
   </div>
+  <div class="wrapper">
+    <div id="content"> 
+      <!-- main -->
+      <article id="main">
+        <section class="about">
+          <div class="Inner"> <a id="profile"></a>
+            <h2>PROFILE</h2>
+            <div class="about_wrap">
+              <div class="about_txt">
+                <p class="about_name">ASUKA SATO</p>
+                <p>私はWebデザイナー兼コーダーとして、これまでEC、ホテル、大学など様々な業種のWebサイト制作に携わってきました。<br>
+                  Photoshopを用いたデザインから、HTML/CSS/JavaScriptを使用したレスポンシブサイトの編集まで、一連の工程の対応ができることが一番の強みです。</p>
+              </div>
+            </div>
+            <h3>CAREER</h3>
+            <div class="career_wrap">
+              <div class="career_box">
+                <div class="career_year">2007</div>
+                <div class="career_detail">
+                  <p class="ti_career">宝塚造形芸術大学造形学部産業デザイン学科　卒業</p>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2007</div>
+                <div class="career_detail">
+                  <p class="ti_career">夢展望株式会社　入社</p>
+                  <p class="position">正社員</p>
+                  <div class="business_cont">
+                    <p class="ti_business">業務内容</p>
+                    <ul>
+                      <li>広告の入稿画像作成</li>
+                      <li>商品ページのアップ作業</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2012</div>
+                <div class="career_detail">
+                  <p class="ti_career">夢展望株式会社　退社</p>
+                  <p>結婚を機に退社</p>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2013</div>
+                <div class="career_detail">
+                  <p class="ti_career">株式会社かんのプランニング　入社</p>
+                  <p class="position">アルバイト</p>
+                  <div class="business_cont">
+                    <p class="ti_business">業務内容</p>
+                    <ul>
+                      <li>ホームページの更新作業</li>
+                      <li>バナー作成</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2015</div>
+                <div class="career_detail">
+                  <p class="ti_career">株式会社かんのプランニング　退社</p>
+                  <p>事業閉鎖のため</p>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2015</div>
+                <div class="career_detail">
+                  <p class="ti_career">サイエンスグラフィックス株式会社　入社</p>
+                  <p class="position">アルバイト</p>
+                  <div class="business_cont">
+                    <p class="ti_business">業務内容</p>
+                    <ul>
+                      <li>ホームページの更新作業</li>
+                      <li>バナー作成</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2017</div>
+                <div class="career_detail">
+                  <p class="ti_career">サイエンスグラフィックス株式会社　退社</p>
+                </div>
+              </div>
+              <div class="career_box">
+                <div class="career_year">2017</div>
+                <div class="career_detail">
+                  <p class="ti_career">リンヤ株式会社　業務委託契約</p>
+                  <p class="position">外部スタッフ</p>
+                  <div class="business_cont">
+                    <p class="ti_business">業務内容</p>
+                    <ul>
+                      <li>ホームページデザイン制作</li>
+                      <li>ホームページコーディング</li>
+                      <li>ホームページの更新作業</li>
+                      <li>バナー作成</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>SKILL</h3>
+            <div class="skill_wrap">
+              <div class="skill_box">
+                <p class="skill_ti">HTML</p>
+                <p class="skill_point">★★★★☆</p>
+              </div>
+              <div class="skill_box">
+                <p class="skill_ti">CSS</p>
+                <p class="skill_point">★★★★☆</p>
+              </div>
+              <div class="skill_box">
+                <p class="skill_ti">JavaScript</p>
+                <p class="skill_point">★★☆☆☆</p>
+              </div>
+              <div class="skill_box">
+                <p class="skill_ti">WordPress</p>
+                <p class="skill_point">★★★☆☆</p>
+              </div>
+              <div class="skill_box">
+                <p class="skill_ti">Photoshop</p>
+                <p class="skill_point">★★★★☆</p>
+              </div>
+              <div class="skill_box">
+                <p class="skill_ti">Illustrator</p>
+                <p class="skill_point">★★☆☆☆</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="works">
+          <div class="Inner"> <a id="works"></a>
+            <h2>WORKS</h2>
+            <h3>WEB DESIGN</h3>
+            <div class="works_cont">
+              <div class="works_box">
+                <figure class="works_img"><img src="img/aojc.webp" alt="絵画骨董買取プロ"></figure>
+                <p class="works_ti">絵画骨董買取プロ</p>
+                <p class="detail">トップページをデザインしました。高価買取を強調しつつ、目利きに自信があることや老舗であることが伝わるような高級感と安心感を与えるデザインを心がけました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://www.aojc.co.jp/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/consulting.allcore.webp" alt="allcore株式会社"></figure>
+                <p class="works_ti">allcore株式会社</p>
+                <p class="detail">トップページをデザインしました。イエローを基調に他のサイトと差を付ける為コンテンツを斜めに並べるなど自然に視線がいくような構成にしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>16時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://consulting.allcore.co.jp/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/j-angel.webp" alt="訳あり物件買取相談所"></figure>
+                <p class="works_ti">訳あり物件買取相談所</p>
+                <p class="detail">トップページをデザインしました。高齢者やご家族に寄り添う安心感を出すため、温かみのあるオレンジを基調としたデザインで制作。フォントサイズもやや大きめに設定。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://www.j-angel.co.jp/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/rewardslp1.webp" alt="株式会社リワーズ"></figure>
+                <p class="works_ti">株式会社リワーズ</p>
+                <p class="detail">LPをデザインしました。パッと見て内容を理解しやすいようアイコン等イラストを入れて制作。安っぽくならないようゴールドで特別感を出しつつ高価買取を強調するため実際の実績例を目立つ位置へ挿入。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://rewards.co.jp/lp1/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/cms-professional.webp" alt="CMSpro"></figure>
+                <p class="works_ti">CMSpro</p>
+                <p class="detail">サービスページをデザインしました。とにかくFVで気を引くためキャッチコピーや金額を目立たせインパクトを付けたものにしました。最後まで見てもらうため各コンテンツ色味や背景に変化をつけてデザインしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://cms-professional.net/cv-max" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/office-grandis.webp" alt="GRANDIS"></figure>
+                <p class="works_ti">GRANDIS</p>
+                <p class="detail">トップページをデザインしました。清涼感のある青を基調に一貫性のある見出しにして統一感を出しました。実際の清掃する様子に加えてメリットの説明を分かりやすいようにイラストを挿入しました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://office-grandis.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/apico.webp" alt="協同組合APICO"></figure>
+                <p class="works_ti">協同組合APICO</p>
+                <p class="detail">トップページをデザインしました。アピールしたい内容をFVに入れインパクトを持たせ、グリーンを基調に事業内容について信頼や安心感を持たせるデザインを心がけました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://apico.or.jp/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/sankou-setsubi.webp" alt="サンコウ設備"></figure>
+                <p class="works_ti">サンコウ設備</p>
+                <p class="detail">トップページをデザインしました。紺色を基調に全体的に落ち着いたデザインにしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop</p>
+                </div>
+                <a href="https://sankou-setsubi.co.jp/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/saisei-fund.webp" alt="東京事業再生コンサルティングセンター"></figure>
+                <p class="works_ti">東京事業再生<br>
+                  コンサルティングセンター</p>
+                <p class="detail">建設業経営者のための事業再生ページをデザインしました。文字の量が多いので、伝えたい内容にメリハリをつけるためサイズや色味に変化をつけ、ストレスを軽減できるよう工夫しました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>24時間</p>
+                  <p class="charge"><span>担当箇所</span>Design / Coding</p>
+                  <p class="tool"><span>使用ツール</span>Photoshop / Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://saisei-fund.com/construction-turnaround/" target="_blank"></a> </div>
+            </div>
+            <h3>CODING</h3>
+            <div class="works_cont">
+              <div class="works_box">
+                <figure class="works_img"><img src="img/apple-nursery.webp" alt="アップルナースリー保育園"></figure>
+                <p class="works_ti">アップルナースリー保育園</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://apple-nursery.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/iris-hoken.webp" alt="保険のアイリス"></figure>
+                <p class="works_ti">保険のアイリス</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / JavaScript</p>
+                </div>
+                <a href="http://www.iris-hoken.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/baligood.webp" alt="株式会社BALIGOOD"></figure>
+                <p class="works_ti">株式会社BALIGOOD</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://www.baligood0916.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/hisho-universal-style.webp" alt="LPK飛翔ユニバーサルスタイル"></figure>
+                <p class="works_ti">LPK飛翔<br>
+                  ユニバーサルスタイル</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://hisho-universal-style.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/mihashi-384.webp" alt="クリーニング ミハシ"></figure>
+                <p class="works_ti">クリーニング ミハシ</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://mihashi-384.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/tandouan.webp" alt="炭道庵"></figure>
+                <p class="works_ti">炭道庵</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="hhttps://www.tandouan.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/futakotamagawa.nico-sports.webp" alt="パーソナルジムNICO二子玉川"></figure>
+                <p class="works_ti">パーソナルジム<br>
+                  NICO二子玉川</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://futakotamagawa.nico-sports.com/" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/impression-wedding.webp" alt="IMPRESSION MARRIAGE"></figure>
+                <p class="works_ti">IMPRESSION MARRIAGE</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://www.impression-wedding.com/impression_marriage" target="_blank"></a> </div>
+              <div class="works_box">
+                <figure class="works_img"><img src="img/012345.webp" alt="家庭教師の熱血先生"></figure>
+                <p class="works_ti">家庭教師の熱血先生</p>
+                <p class="detail">トップページ・下層ページのマークアップ作業をしました。</p>
+                <div class="works_tct">
+                  <p class="time"><span>制作時間</span>15時間</p>
+                  <p class="charge"><span>担当箇所</span>Coding</p>
+                  <p class="tool"><span>使用ツール</span>Dreamweaver / HTML / CSS / Wordpress</p>
+                </div>
+                <a href="https://www.012345.co.jp/" target="_blank"></a> </div>
+            </div>
+            <!--    
+    <h3>BANNER</h3>
+    <div class="works_cont">
+    <div class="works_box">
+    <figure class="works_img"><img src=""></figure>
+    <p class="works_ti">案件名</p>
+    <p class="detail">説明文</p>
+    <p class="time">制作時間</p>
+    <p class="charge">Design / Coarding </p>
+    <p class="tool">HTML / CSS / Photoshop</p>
+    <a href="#"></a>
+    </div>
+    <div class="works_box">
+    <figure class="works_img"><img src=""></figure>
+    <p class="works_ti">案件名</p>
+    <p class="detail">説明文</p>
+    <p class="time">制作時間</p>
+    <p class="charge">Design / Coarding </p>
+    <p class="tool">HTML / CSS / Photoshop</p>
+    <a href="#"></a>
+    </div>
+    </div>
+ --> 
+          </div>
+        </section>
+      </article>
+      <!-- eof main --> 
+    </div>
+  </div>
+  <footer>
+    <div class="copyright">
+      <p>© 2026 <a href="<?php bloginfo('url'); ?>/"> PORTFORIO All rights reserved. </a></p>
+    </div>
+  </footer>
+  
+  <!--ページ内スクロール--> 
+  <script type="text/javascript" src="js/scrollsmoothly.js"></script> 
+  <!--/ページ内スクロール--> 
+  
 </div>
-<script>
-const PAGE_TITLE = "Private Page";
-const QUERY_UNLOCK = true;
-const REMEMBER_UNLOCK = false;
-const STRICT_VIEW = false;
-const CAPACITY_SAVE = true;
-const TWO_STAGE_JAVASCRIPT = true;
-const STAGE2_KEY = "Vr8IhVgYMD5tHiKSG5qxefeSfcFCTFasbRsd6zteLBDuzKmSVRVpIkqEQ6dzvWwhrfz6SCaxROwRItA266Frs2WeCAjV7rPRR5uS";
-const STAGE2_SALT = "ZX1UBguLanYjSv7rIgeBYw==";
-const STAGE2_IV = "+BPwSijyVm8w/m0H";
-const STAGE2_DATA = "vtXooIQwtXKN8H5lfCdw9GIkukSxG6el8A3E6Z7v+QPrCGfuQf3pzIdO7fPP5sUEV5lFPMAwBzWCkoltDwxKfQzM+8nZ92Ur/yPw0mkumOUgFa/ZpudNdBUE/yVxtVumulTGj/EOmR1Pb9dnxSu/DQ==";
-const LOCKED_SALT = "Ah+oeEit3vqOAIKEOehKDg==";
-const LOCKED_IV = "LReGFS2wdbL7ZFBp";
-const LOCKED_DATA = "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";
-const UNLOCK_STORAGE_SECRET = "3CRvvJct52TraK5ZKgG3u2W89JwmqjrwQ38I2EnFax0RTzQ1CaXYKbQUTZZnRjvWPJLCMoVVBg42hHI22FBTC1rcXpaavhfhZ1TB";
-
-function fromBase64(value) {
-  return Uint8Array.from(atob(value), char => char.charCodeAt(0));
-}
-
-function toBase64(buffer) {
-  const bytes = buffer instanceof Uint8Array ? buffer : new Uint8Array(buffer);
-  let binary = '';
-  const chunkSize = 32768;
-  for (let i = 0; i < bytes.length; i += chunkSize) {
-    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
-  }
-  return btoa(binary);
-}
-
-function hideQueryKey() {
-  try {
-    const url = new URL(window.location.href);
-    if (!url.searchParams.has('key')) return;
-    url.searchParams.delete('key');
-    window.history.replaceState(null, '', url.pathname + url.search + url.hash);
-  } catch (_) {}
-}
-
-function showUnlockScreen() {
-  document.documentElement.classList.remove('auto-unlocking');
-}
-
-function riskyUrl(value) {
-  const text = String(value || '').trim();
-  if (!text) return false;
-  if (/^(javascript|vbscript|data:text\/html)/i.test(text)) return true;
-  try {
-    const url = new URL(text, window.location.href);
-    return ['http:', 'https:', 'ftp:', 'ws:', 'wss:'].includes(url.protocol);
-  } catch (_) {
-    return false;
-  }
-}
-
-function cleanCss(text) {
-  return String(text || '')
-    .replace(/@import[^;]+;/gi, '')
-    .replace(/url\s*\(([^)]*)\)/gi, (all, raw) => {
-      const value = raw.trim().replace(/^['"]|['"]$/g, '');
-      return riskyUrl(value) ? 'none' : all;
-    });
-}
-
-function staticOnly(html) {
-  const doc = new DOMParser().parseFromString(html, 'text/html');
-  doc.querySelectorAll('script, iframe, frame, object, embed, meta[http-equiv="refresh"], link[rel="preload"], link[rel="prefetch"], link[rel="preconnect"], link[rel="dns-prefetch"], link[rel="modulepreload"]').forEach(node => node.remove());
-
-  doc.querySelectorAll('link').forEach(node => {
-    const rel = (node.getAttribute('rel') || '').toLowerCase();
-    const href = node.getAttribute('href') || '';
-    if (rel.includes('stylesheet') || riskyUrl(href)) node.remove();
-  });
-
-  doc.querySelectorAll('style').forEach(node => {
-    node.textContent = cleanCss(node.textContent);
-  });
-
-  const urlAttributes = new Set(['src', 'srcset', 'href', 'poster', 'action', 'formaction', 'data', 'background']);
-  doc.querySelectorAll('*').forEach(node => {
-    for (const attr of Array.from(node.attributes)) {
-      const name = attr.name.toLowerCase();
-      if (name.startsWith('on')) node.removeAttribute(attr.name);
-      else if (name === 'style') node.setAttribute('style', cleanCss(attr.value));
-      else if (urlAttributes.has(name) && riskyUrl(attr.value)) node.removeAttribute(attr.name);
-    }
-  });
-
-  const meta = doc.createElement('meta');
-  meta.setAttribute('name', 'referrer');
-  meta.setAttribute('content', 'no-referrer');
-  doc.head.prepend(meta);
-
-  return '<!DOCTYPE html>' + doc.documentElement.outerHTML;
-}
-
-async function gunzip(bytes) {
-  if (!window.DecompressionStream) throw new Error('このブラウザは解凍APIに対応していません。');
-  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-  return await new Response(stream).arrayBuffer();
-}
-
-async function A7qM2zLp() {
-  if (!TWO_STAGE_JAVASCRIPT || !STAGE2_KEY || !STAGE2_SALT || !STAGE2_IV || !STAGE2_DATA) return [];
-  const secret = await crypto.subtle.importKey('raw', new TextEncoder().encode(STAGE2_KEY), 'PBKDF2', false, ['deriveKey']);
-  const key = await crypto.subtle.deriveKey(
-    { name: 'PBKDF2', salt: fromBase64(STAGE2_SALT), iterations: 600000, hash: 'SHA-256' },
-    secret,
-    { name: 'AES-GCM', length: 256 },
-    false,
-    ['decrypt']
-  );
-  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: fromBase64(STAGE2_IV) }, key, fromBase64(STAGE2_DATA));
-  const body = CAPACITY_SAVE ? await gunzip(new Uint8Array(plain)) : plain;
-  const parsed = JSON.parse(new TextDecoder().decode(body));
-  return Array.isArray(parsed) ? parsed : [];
-}
-
-function setScriptAttributes(target, attrs) {
-  for (const [name, value] of Object.entries(attrs || {})) {
-    if (name.toLowerCase() === 'src') continue;
-    try { target.setAttribute(name, value); } catch (_) {}
-  }
-}
-
-function Ab5Kx9Rt(record) {
-  return new Promise(resolve => {
-    const attrs = record.attrs || {};
-    const script = document.createElement('script');
-    let blobUrl = '';
-    let done = false;
-    const finish = () => {
-      if (done) return;
-      done = true;
-      if (blobUrl) URL.revokeObjectURL(blobUrl);
-      try { script.remove(); } catch (_) {}
-      resolve();
-    };
-    setScriptAttributes(script, attrs);
-    script.onload = finish;
-    script.onerror = finish;
-
-    if (attrs.src) {
-      script.src = attrs.src;
-    } else {
-      blobUrl = URL.createObjectURL(new Blob([record.text || ''], { type: 'text/javascript' }));
-      script.src = blobUrl;
-    }
-
-    (document.body || document.documentElement).appendChild(script);
-  });
-}
-
-async function runStage2Scripts() {
-  try {
-    const scripts = await A7qM2zLp();
-    for (const record of scripts) await Ab5Kx9Rt(record);
-  } catch (error) {
-    console.error('Stage2 JavaScript restore failed:', error);
-  }
-}
-
-function stage2LoaderScript() {
-  if (!TWO_STAGE_JAVASCRIPT || STRICT_VIEW) return '';
-  const loader = '(' + function(config) {
-    function fromBase64(value) {
-      return Uint8Array.from(atob(value), function(char) { return char.charCodeAt(0); });
-    }
-    async function gunzip(bytes) {
-      if (!window.DecompressionStream) throw new Error('このブラウザは解凍APIに対応していません。');
-      const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
-      return await new Response(stream).arrayBuffer();
-    }
-    async function A7qM2zLp() {
-      const secret = await crypto.subtle.importKey('raw', new TextEncoder().encode(config.key), 'PBKDF2', false, ['deriveKey']);
-      const key = await crypto.subtle.deriveKey(
-        { name: 'PBKDF2', salt: fromBase64(config.salt), iterations: 600000, hash: 'SHA-256' },
-        secret,
-        { name: 'AES-GCM', length: 256 },
-        false,
-        ['decrypt']
-      );
-      const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: fromBase64(config.iv) }, key, fromBase64(config.data));
-      const body = config.capacitySave ? await gunzip(new Uint8Array(plain)) : plain;
-      const parsed = JSON.parse(new TextDecoder().decode(body));
-      return Array.isArray(parsed) ? parsed : [];
-    }
-    function setScriptAttributes(target, attrs) {
-      Object.entries(attrs || {}).forEach(function(entry) {
-        const name = entry[0];
-        const value = entry[1];
-        if (String(name).toLowerCase() === 'src') return;
-        try { target.setAttribute(name, value); } catch (_) {}
-      });
-    }
-    function Ab5Kx9Rt(record) {
-      return new Promise(function(resolve) {
-        const script = document.createElement('script');
-        const attrs = record.attrs || {};
-        let blobUrl = '';
-        let done = false;
-        function finish() {
-          if (done) return;
-          done = true;
-          if (blobUrl) URL.revokeObjectURL(blobUrl);
-          try { script.remove(); } catch (_) {}
-          resolve();
-        }
-        setScriptAttributes(script, attrs);
-        script.onload = finish;
-        script.onerror = finish;
-        if (attrs.src) {
-          script.src = attrs.src;
-        } else {
-          blobUrl = URL.createObjectURL(new Blob([record.text || ''], { type: 'text/javascript' }));
-          script.src = blobUrl;
-        }
-        (document.body || document.documentElement).appendChild(script);
-      });
-    }
-    async function main() {
-      try {
-        const scripts = await A7qM2zLp();
-        for (const record of scripts) await Ab5Kx9Rt(record);
-      } catch (error) {
-        console.error('Stage2 JavaScript restore failed:', error);
-      }
-    }
-    main();
-  } + ')(' + JSON.stringify({
-    key: STAGE2_KEY,
-    salt: STAGE2_SALT,
-    iv: STAGE2_IV,
-    data: STAGE2_DATA,
-    capacitySave: CAPACITY_SAVE
-  }) + ');';
-  const closingScriptPattern = new RegExp('<' + '/script', 'gi');
-  const safeLoader = loader.replace(closingScriptPattern, '<' + '\/script');
-  return '<script>' + safeLoader + '<\/script>';
-}
-
-function injectStage2Loader(html) {
-  if (!TWO_STAGE_JAVASCRIPT || STRICT_VIEW) return html;
-  const loader = stage2LoaderScript();
-  const closingBodyPattern = new RegExp('<' + '/body>', 'i');
-  if (closingBodyPattern.test(html)) return html.replace(closingBodyPattern, loader + '<' + '/body>');
-  return html + loader;
-}
-
-async function openHtml(html) {
-  const scripts = (!STRICT_VIEW && TWO_STAGE_JAVASCRIPT) ? await A7qM2zLp() : [];
-  const output = STRICT_VIEW ? staticOnly(html) : html;
-  document.open();
-  document.write(output);
-  document.close();
-  if (scripts.length) {
-    for (const record of scripts) await Ab5Kx9Rt(record);
-  }
-}
-
-const UNLOCK_DB_NAME = 'local-html-locker-unlock-passwords';
-const UNLOCK_DB_VERSION = 1;
-const UNLOCK_STORE_NAME = 'kv';
-const UNLOCK_PASSWORDS_KEY = 'passwords:' + UNLOCK_STORAGE_SECRET;
-const UNLOCK_PASSWORDS_BLOB_VERSION = 3;
-
-function canUseUnlockStorage() {
-  return REMEMBER_UNLOCK && /^[A-Za-z0-9]{100}$/.test(UNLOCK_STORAGE_SECRET);
-}
-
-function openUnlockDb() {
-  return new Promise((resolve, reject) => {
-    if (!window.indexedDB) {
-      reject(new Error('このブラウザはIndexedDBに対応していません。'));
-      return;
-    }
-    const request = indexedDB.open(UNLOCK_DB_NAME, UNLOCK_DB_VERSION);
-    request.onupgradeneeded = event => {
-      const db = event.target.result;
-      if (!db.objectStoreNames.contains(UNLOCK_STORE_NAME)) db.createObjectStore(UNLOCK_STORE_NAME);
-    };
-    request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error || new Error('IndexedDBを開けませんでした。'));
-  });
-}
-
-async function unlockDbGet(key, fallbackValue) {
-  const db = await openUnlockDb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(UNLOCK_STORE_NAME, 'readonly');
-    const store = tx.objectStore(UNLOCK_STORE_NAME);
-    const request = store.get(key);
-    request.onsuccess = () => resolve(request.result ?? fallbackValue);
-    request.onerror = () => reject(request.error || new Error('IndexedDBの読込に失敗しました。'));
-    tx.oncomplete = () => db.close();
-    tx.onerror = () => { db.close(); reject(tx.error || new Error('IndexedDBの読込に失敗しました。')); };
-  });
-}
-
-async function unlockDbSet(key, value) {
-  const db = await openUnlockDb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(UNLOCK_STORE_NAME, 'readwrite');
-    const store = tx.objectStore(UNLOCK_STORE_NAME);
-    store.put(value, key);
-    tx.oncomplete = () => { db.close(); resolve(); };
-    tx.onerror = () => { db.close(); reject(tx.error || new Error('IndexedDBの保存に失敗しました。')); };
-  });
-}
-
-async function deriveUnlockStorageKey(salt) {
-  const seed = await crypto.subtle.importKey('raw', new TextEncoder().encode(UNLOCK_STORAGE_SECRET), 'PBKDF2', false, ['deriveKey']);
-  return crypto.subtle.deriveKey(
-    { name: 'PBKDF2', salt, iterations: 210000, hash: 'SHA-256' },
-    seed,
-    { name: 'AES-GCM', length: 256 },
-    false,
-    ['encrypt', 'decrypt']
-  );
-}
-
-async function encryptSavedPasswords(passwords) {
-  const salt = crypto.getRandomValues(new Uint8Array(16));
-  const iv = crypto.getRandomValues(new Uint8Array(12));
-  const key = await deriveUnlockStorageKey(salt);
-  const cleanPasswords = Array.from(new Set(passwords.filter(item => typeof item === 'string' && item)));
-  const plain = new TextEncoder().encode(JSON.stringify(cleanPasswords));
-  const data = await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, plain);
-  return {
-    v: UNLOCK_PASSWORDS_BLOB_VERSION,
-    alg: 'AES-GCM/PBKDF2-SHA256',
-    marker: UNLOCK_STORAGE_SECRET,
-    salt: toBase64(salt),
-    iv: toBase64(iv),
-    data: toBase64(data)
-  };
-}
-
-async function decryptSavedPasswordsBlob(blob) {
-  if (!canUseUnlockStorage()) return [];
-  if (!blob || blob.v !== UNLOCK_PASSWORDS_BLOB_VERSION || blob.marker !== UNLOCK_STORAGE_SECRET || !blob.salt || !blob.iv || !blob.data) return [];
-  const key = await deriveUnlockStorageKey(fromBase64(blob.salt));
-  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: fromBase64(blob.iv) }, key, fromBase64(blob.data));
-  const parsed = JSON.parse(new TextDecoder().decode(plain));
-  return Array.isArray(parsed) ? parsed.filter(item => typeof item === 'string' && item) : [];
-}
-
-async function getSavedPasswords() {
-  if (!canUseUnlockStorage()) return [];
-  try {
-    const value = await unlockDbGet(UNLOCK_PASSWORDS_KEY, null);
-    return await decryptSavedPasswordsBlob(value);
-  } catch (_) {
-    return [];
-  }
-}
-
-async function savePasswordIfNeeded(passphrase) {
-  if (!canUseUnlockStorage() || !passphrase) return;
-  try {
-    const passwords = await getSavedPasswords();
-    if (passwords.includes(passphrase)) return;
-    passwords.push(passphrase);
-    await unlockDbSet(UNLOCK_PASSWORDS_KEY, await encryptSavedPasswords(passwords));
-  } catch (_) {}
-}
-
-async function decryptWithPassphrase(passphrase) {
-  const secret = await crypto.subtle.importKey('raw', new TextEncoder().encode(passphrase), 'PBKDF2', false, ['deriveKey']);
-  const key = await crypto.subtle.deriveKey(
-    { name: 'PBKDF2', salt: fromBase64(LOCKED_SALT), iterations: 600000, hash: 'SHA-256' },
-    secret,
-    { name: 'AES-GCM', length: 256 },
-    false,
-    ['decrypt']
-  );
-  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: fromBase64(LOCKED_IV) }, key, fromBase64(LOCKED_DATA));
-  const body = CAPACITY_SAVE ? await gunzip(new Uint8Array(plain)) : plain;
-  return new TextDecoder().decode(body);
-}
-
-async function tryUnlockWithPassphrase(passphrase, option) {
-  const showProgress = option && option.showProgress;
-  const showFailure = option && option.showFailure;
-  const saveOnSuccess = !option || option.saveOnSuccess !== false;
-  const button = document.getElementById('unlockButton');
-  const message = document.getElementById('message');
-
-  if (showProgress) {
-    message.className = 'message';
-    message.textContent = '復号しています...';
-    button.disabled = true;
-  }
-
-  try {
-    const html = await decryptWithPassphrase(passphrase);
-    if (saveOnSuccess) await savePasswordIfNeeded(passphrase);
-    await openHtml(html);
-    return true;
-  } catch (_) {
-    showUnlockScreen();
-    if (showFailure) {
-      message.className = 'message error';
-      message.textContent = 'パスワードが一致しません';
-    }
-    return false;
-  } finally {
-    if (showProgress) button.disabled = false;
-  }
-}
-
-async function unlock() {
-  const input = document.getElementById('unlockKey');
-  await tryUnlockWithPassphrase(input.value, { showProgress: true, showFailure: true, saveOnSuccess: true });
-}
-
-function extractPasswordFromInfoText(text) {
-  const lines = String(text || '').split(/\r?\n/);
-  for (let i = 0; i < lines.length; i++) {
-    if (lines[i].trim() === '【パスワード】') {
-      for (let j = i + 1; j < lines.length; j++) {
-        const value = lines[j].trim();
-        if (value) return value;
-      }
-      return '';
-    }
-  }
-  return '';
-}
-
-async function openUnlockFile(file) {
-  const message = document.getElementById('message');
-  try {
-    const text = await file.text();
-    const password = extractPasswordFromInfoText(text);
-    if (!password) {
-      message.className = 'message error';
-      message.textContent = '解除用ファイルからパスワードを読み取れませんでした';
-      return;
-    }
-    document.getElementById('unlockKey').value = password;
-    await tryUnlockWithPassphrase(password, { showProgress: true, showFailure: true, saveOnSuccess: true });
-  } catch (_) {
-    message.className = 'message error';
-    message.textContent = '解除用ファイルを開けませんでした';
-  }
-}
-
-async function trySavedPasswordsSilently() {
-  const passwords = await getSavedPasswords();
-  for (const password of passwords) {
-    const ok = await tryUnlockWithPassphrase(password, { showProgress: false, showFailure: false, saveOnSuccess: false });
-    if (ok) return true;
-  }
-  return false;
-}
-
-async function boot() {
-  let queryTried = false;
-  if (QUERY_UNLOCK) {
-    const key = new URLSearchParams(window.location.search).get('key');
-    if (key) {
-      queryTried = true;
-      document.getElementById('unlockKey').value = key;
-      hideQueryKey();
-      const ok = await tryUnlockWithPassphrase(key, { showProgress: true, showFailure: true, saveOnSuccess: true });
-      if (ok) return;
-    }
-  }
-
-  const savedOk = await trySavedPasswordsSilently();
-  if (!savedOk && !queryTried) showUnlockScreen();
-}
-
-document.getElementById('unlockButton').addEventListener('click', unlock);
-document.getElementById('unlockKey').addEventListener('keydown', event => {
-  if (event.key === 'Enter') unlock();
-});
-document.getElementById('openUnlockFileButton').addEventListener('click', () => {
-  document.getElementById('unlockFileInput').click();
-});
-document.getElementById('unlockFileInput').addEventListener('change', event => {
-  const file = event.target.files && event.target.files[0];
-  if (file) openUnlockFile(file);
-  event.target.value = '';
-});
-boot();
-</script>
 </body>
 </html>
