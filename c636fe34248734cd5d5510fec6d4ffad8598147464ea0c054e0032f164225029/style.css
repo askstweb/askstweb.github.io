@@ -135,8 +135,7 @@ hr {
 	float: none;
 	line-height: 1.8;
 	font-size: 14px;
-	margin: 0 auto;
-	/*text-align: justify;*/
+	margin: 0 auto;/*text-align: justify;*/
 }
 #content .sec h2:first-child, #content .sec h3:first-child, #content .sec h4:first-child {
 	margin-top: 0 !important;
@@ -341,6 +340,10 @@ footer {
 	font-family: "work-sans", sans-serif;
 	font-weight: bold;
 	font-style: normal;
+}
+h1 a {
+	color: #000 !important;
+	text-decoration: none;
 }
 /* コンテンツ中のh1上margin */
 #content #main h1.title {
@@ -1030,19 +1033,19 @@ section.about:before {
 	display: inline;
 }
 .position {
-    display: inline;
-    padding: 0 8px;
-    line-height: 1.7;
-    margin: 8px 0 15px 10px;
-    border: 1px solid;
-    border-radius: 50px;
-    color: #959595;
+	display: inline;
+	padding: 0 8px;
+	line-height: 1.7;
+	margin: 8px 0 15px 10px;
+	border: 1px solid;
+	border-radius: 50px;
+	color: #959595;
 }
 .ti_business {
-    margin: 10px 0 10px;
-    border-bottom: 1px solid #959595;
-    padding-bottom: 5px;
-    color: #959595;
+	margin: 10px 0 10px;
+	border-bottom: 1px solid #959595;
+	padding-bottom: 5px;
+	color: #959595;
 }
 /*
 .ti_business:before {
@@ -1055,9 +1058,9 @@ section.about:before {
 	vertical-align: middle;
 }*/
 .business_cont {
-    margin: 15px 0 10px 0;
-    background: #f8f8f8;
-    padding: 1px 30px;
+	margin: 15px 0 10px 0;
+	background: #f8f8f8;
+	padding: 1px 30px;
 }
 .business_cont ul {
 	margin:0 0 10px 15px;
@@ -1071,12 +1074,12 @@ section.works {
 	margin-left: calc(-50vw + 50%);
 }
 .skill_wrap {
-    display: flex;
-    padding: 30px 50px;
-    width: 42%;
-    flex-wrap: wrap;
-    border: #f0f0f0 7px solid;
-    border-radius: 20px;
+	display: flex;
+	padding: 30px 50px;
+	width: 42%;
+	flex-wrap: wrap;
+	border: #f0f0f0 7px solid;
+	border-radius: 20px;
 }
 .skill_box {
 	display: flex;
@@ -1792,7 +1795,7 @@ section.about:before {
 }
 #content #main h3 {
 	font-size: 18px;
-	    margin: 50px 0 20px 0;
+	margin: 50px 0 20px 0;
 }
 .wrapper-top {
 	position: fixed;
@@ -1970,14 +1973,14 @@ footer {
 	padding-top: 0px;
 }
 #content #main h3:before {
-    height: 50px;
+	height: 50px;
 }
 #content {
 	padding: 0;
 }
 #content #main {
-        padding: 0 20px 0 30px;
-    }
+	padding: 0 20px 0 30px;
+}
 .Inner {
 	padding:0px 0 0 40px;
 }
@@ -1999,14 +2002,14 @@ section.about h2 {
 	padding-top: 30px !important;
 }
 section.works {
-    width: 100%;
-    margin-left: auto;
+	width: 100%;
+	margin-left: auto;
 }
 section.works h2 {
-    margin-top: 30px !important;
+	margin-top: 30px !important;
 }
 section.works h3 {
-    margin-top: 10px !important;
+	margin-top: 10px !important;
 }
 .works_cont {
 	display: block;
@@ -2015,9 +2018,9 @@ section.works h3 {
 	width:100%;
 	padding-top: 0;
 }
-    .career_detail {
-        width: 58vw;
-    }
+.career_detail {
+	width: 58vw;
+}
 .skill_wrap {
 	width: 100%;
 	padding: 20px;
@@ -2031,10 +2034,10 @@ section.works h3 {
 	width: 158px;
 }
 .career_year {
-    width: 12vw;
-    height: 12vw;
+	width: 12vw;
+	height: 12vw;
 }
 .career_box:before {
-    left: 6vw;
+	left: 6vw;
 }
 }/*end*/
